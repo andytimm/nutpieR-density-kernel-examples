@@ -34,7 +34,7 @@ for label, ratio_column, baseline_column, kernel_column, scale, unit in measurem
     kernel = statistics.fmean(float(row[kernel_column]) for row in rows) * scale
     print(
         f"{label}: mean time={baseline:.6g}->{kernel:.6g} {unit}; "
-        f"median kernel/BridgeStan={statistics.median(ratios):.6f}; "
         f"mean speedup={statistics.fmean(speedups):.3f}x; "
+        f"median speedup={statistics.median(speedups):.3f}x; "
         f"kernel faster={sum(ratio < 1 for ratio in ratios)}/{len(ratios)}"
     )

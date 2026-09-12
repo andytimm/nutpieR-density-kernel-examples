@@ -2,12 +2,12 @@
 
 Seyboldt, Carlson, and Carpenter's paper, ["Preconditioning Hamiltonian Monte Carlo by minimizing Fisher Divergence"](https://arxiv.org/abs/2603.18845), retained 114 models from [PosteriorDB](https://github.com/stan-dev/posteriordb). This repository contains 112 handwritten Rust BYOK kernels for those models. Lotka-Volterra and SIR are omitted because matching their ODE solvers and sensitivities exactly was more work than we wanted. We were a bit lazy.
 
-| Measurement | Mean time across models (BridgeStan → kernel) | Median kernel / BridgeStan ratio (lower is better) | Mean speedup | Kernel faster |
+| Measurement | Mean method time (base nutpieR → BYOK) | Mean speedup (base nutpieR / BYOK) | Median speedup (base nutpieR / BYOK) | BYOK faster |
 | --- | --- | ---: | ---: | ---: |
-| End-to-end NUTS sampling | `5.25 s → 1.88 s` | `0.208` | `7.38x` | `100/112` |
-| Log density + full gradient | `118 µs → 21.5 µs per evaluation` | `0.114` | `10.15x` | `99/112` |
+| End-to-end NUTS sampling | `5.25 s → 1.88 s` | `7.38x` | `4.80x` | `100/112` |
+| Log density + full gradient | `118 µs → 21.5 µs per evaluation` | `10.15x` | `8.74x` | `99/112` |
 
-Mean time and mean speedup are arithmetic averages across models. A few very large wins pull mean speedup upward, so the median ratio is the steadier typical-model summary. See [`results/performance.csv`](results/performance.csv) and [`results/README.md`](results/README.md) for the measurements, methods, and limits.
+Mean method times average base nutpieR and BYOK separately. Speedup is calculated per model before taking the mean or median, so it does not equal the ratio of the displayed mean times. A few very large wins pull the mean upward; the median is the steadier typical-model summary. See [`results/performance.csv`](results/performance.csv) and [`results/README.md`](results/README.md) for methods and limits.
 
 ## Repository layout
 
