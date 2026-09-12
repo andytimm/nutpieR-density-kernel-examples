@@ -34,10 +34,7 @@ and R conversion. Native and sampling ratios are not interchangeable.
 
 A ratio below one favors the kernel. The main README converts each model to the
 base nutpieR/BYOK speedup direction, then reports the arithmetic mean and
-median of those 112 speedups. Its time column averages each method separately.
-An average of ratios is not the ratio of averages, so the displayed mean times
-do not divide to the displayed mean speedup. A few large wins pull the mean
-above the median.
+median of those 112 speedups. A few large wins pull the mean above the median.
 
 ## Provenance
 
