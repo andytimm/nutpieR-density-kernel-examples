@@ -32,9 +32,10 @@ Each method has three alternating blocks over saved checker points. This timer
 covers log density plus the full gradient. It excludes process startup, binding,
 and R conversion. Native and sampling ratios are not interchangeable.
 
-A ratio below one favors the kernel. The aggregate in the main README is the
-unweighted median of the 112 model-level ratios. Its displayed speedup is the
-reciprocal of that median, not the median of per-model reciprocals.
+A ratio below one favors the kernel. The median ratio in the main README is the
+unweighted median of the 112 model-level ratios. Mean time averages the stored
+model-level method medians. Mean speedup averages the 112 per-model
+BridgeStan/kernel ratios, so a few large wins pull it upward.
 
 ## Provenance
 
