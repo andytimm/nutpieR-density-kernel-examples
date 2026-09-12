@@ -1,0 +1,103 @@
+model_id,measurement_source,sample_valid_pairs,sample_invalid_pairs,bridgestan_median_sample_s,kernel_median_sample_s,sample_kernel_over_bridgestan,native_status,native_blocks,native_valid_bs_blocks,native_valid_kernel_blocks,bridgestan_median_ns_per_eval,kernel_median_ns_per_eval,native_kernel_over_bridgestan,sample_timing_provenance,native_provenance
+GLMM_data-GLMM1_model,firstpass_original,3,0,0.656,0.182,0.27743902439,ok,3,3,3,29951,5127.32,0.171190277453,original saved artifacts,firstpass_native
+GLM_Binomial_data-GLM_Binomial_model,firstpass_original,3,0,0.02,0.013,0.65,ok,3,3,3,1268.66,290.138,0.228696419845,original saved artifacts,firstpass_native
+GLM_Poisson_Data-GLM_Poisson_model,firstpass_original,3,0,0.029,0.014,0.48275862069,ok,3,3,3,1079.41,165.31,0.153148479262,original saved artifacts,firstpass_native
+M0_data-M0_model,firstpass_original,3,0,0.073,0.011,0.150684931507,ok,3,3,3,11776.8,487.114,0.0413621696896,original saved artifacts,firstpass_native
+Mb_data-Mb_model,firstpass_original,3,0,0.35,0.072,0.205714285714,ok,3,3,3,46201.7,4348.92,0.0941290039111,original saved artifacts,firstpass_native
+Mt_data-Mt_model,firstpass_original,3,0,0.115,0.021,0.182608695652,ok,3,3,3,15974.5,1888.48,0.118218410592,original saved artifacts,firstpass_native
+Mtbh_data-Mtbh_model,firstpass_original,3,0,0.813,0.372,0.457564575646,ok,3,3,3,41639.7,16463.2,0.395372685202,original saved artifacts,firstpass_native
+Mth_data-Mth_model,followup_new,3,0,2.429,0.769,0.31659118979,ok,3,3,3,96793.8,27420.7,0.283289838812,primary saved follow-up paired artifacts,followup_primary_native
+Rate_1_data-Rate_1_model,followup_new,3,0,0.009,0.008,0.8,ok,3,3,3,128.509,7.52992,0.0585944953272,primary saved follow-up paired artifacts,followup_primary_native
+Rate_2_data-Rate_2_model,firstpass_original,3,0,0.01,0.008,0.8,ok,3,3,3,194.505,10.7929,0.0554890619778,original saved artifacts,firstpass_native
+Rate_3_data-Rate_3_model,firstpass_original,3,0,0.009,0.008,0.888888888889,ok,3,3,3,148.021,12.1552,0.0821180778403,original saved artifacts,firstpass_native
+Rate_4_data-Rate_4_model,firstpass_original,3,0,0.01,0.008,0.8,ok,3,3,3,186.876,14.1354,0.0756405316895,original saved artifacts,firstpass_native
+Rate_5_data-Rate_5_model,firstpass_original,3,0,0.009,0.008,0.888888888889,ok,3,3,3,143.507,6.08798,0.0424228783265,original saved artifacts,firstpass_native
+Survey_data-Survey_model,followup_replacement,3,0,0.585,1.635,2.75252525253,ok,3,3,3,49919.6,174638,3.49838540373,primary saved follow-up paired artifacts,followup_primary_native
+arK-arK,firstpass_original,3,0,0.404,0.04,0.0990099009901,ok,3,3,3,11957.5,784.349,0.0655947313402,original saved artifacts,firstpass_native
+arma-arma11,firstpass_original,3,0,0.062,0.013,0.209677419355,ok,3,3,3,4972.87,379.108,0.07623525248,original saved artifacts,firstpass_native
+bball_drive_event_1-hmm_drive_1,followup_new,3,0,2.273,0.245,0.109645131938,ok,3,3,3,135415,11308.4,0.0835092124211,primary saved follow-up paired artifacts,followup_primary_native
+bones_data-bones_model,firstpass_original,3,0,0.469,0.042,0.089552238806,ok,3,3,3,46377.8,3205.88,0.0691253142667,original saved artifacts,firstpass_native
+butterfly-multi_occupancy,followup_new,3,0,2.34,0.359,0.168376068376,ok,3,3,3,50863.6,8215.4,0.161518256671,primary saved follow-up paired artifacts,followup_primary_native
+diamonds-diamonds,followup_new,3,0,12.695,18.992,1.53391098858,ok,3,3,3,24892.7,36227.9,1.45536241549,primary saved follow-up paired artifacts,followup_primary_native
+dogs-dogs,firstpass_original,3,0,0.839,0.124,0.147794994041,ok,3,3,3,66604.9,5773.02,0.086675604948,original saved artifacts,firstpass_native
+dogs-dogs_hierarchical,firstpass_original,3,0,0.205,0.055,0.268292682927,ok,3,3,3,28043.2,3148.48,0.112272493867,original saved artifacts,firstpass_native
+dugongs_data-dugongs_model,firstpass_original,3,0,0.03,0.018,0.6,ok,3,3,3,807.861,272.63,0.337471421445,original saved artifacts,firstpass_native
+earnings-earn_height,firstpass_original,3,0,0.352,0.036,0.102272727273,ok,3,3,3,10120.3,760.409,0.0751370018675,original saved artifacts,firstpass_native
+earnings-log10earn_height,firstpass_original,3,0,0.384,0.039,0.1015625,ok,3,3,3,10614.8,787.856,0.0742224064514,original saved artifacts,firstpass_native
+earnings-logearn_height,firstpass_original,3,0,0.405,0.103,0.254320987654,ok,3,3,3,10381.9,2447.95,0.235790173282,original saved artifacts,firstpass_native
+earnings-logearn_height_male,firstpass_original,3,0,0.886,0.067,0.0756207674944,ok,3,3,3,18648,1088.69,0.0583810596311,original saved artifacts,firstpass_native
+earnings-logearn_interaction,firstpass_original,3,0,3.469,0.469,0.135197463246,ok,3,3,3,27581.2,3710.76,0.134539468914,original saved artifacts,firstpass_native
+earnings-logearn_interaction_z,firstpass_original,3,0,0.325,0.057,0.175384615385,ok,3,3,3,26089.6,4259.5,0.163264289219,original saved artifacts,firstpass_native
+earnings-logearn_logheight_male,firstpass_original,3,0,2.824,0.133,0.0470963172805,ok,3,3,3,18356.6,741.362,0.0403866729133,original saved artifacts,firstpass_native
+eight_schools-eight_schools_noncentered,firstpass_original,3,0,0.016,0.01,0.625,ok,3,3,3,462.481,18.7203,0.0404779872038,original saved artifacts,firstpass_native
+fims_Aus_Jpn_irt-2pl_latent_reg_irt,followup_new,3,0,4.735,2.755,0.613458528951,ok,3,3,3,137884,83136.7,0.602946679818,primary saved follow-up paired artifacts,followup_primary_native
+garch-garch11,firstpass_original,3,0,0.118,0.026,0.220338983051,ok,3,3,3,9383.2,1388.89,0.148018799557,original saved artifacts,firstpass_native
+gp_pois_regr-gp_regr,firstpass_original,3,0,0.025,0.018,0.72,ok,3,3,3,3024.74,1944.64,0.642911456852,original saved artifacts,firstpass_native
+hmm_example-hmm_example,firstpass_original,3,0,0.262,0.078,0.297709923664,ok,3,3,3,23018.3,5074.81,0.220468496805,original saved artifacts,firstpass_native
+irt_2pl-irt_2pl,firstpass_original,3,0,0.948,0.529,0.558016877637,ok,3,3,3,37026.2,20053.1,0.541592169869,original saved artifacts,firstpass_native
+kidiq-kidscore_interaction,firstpass_original,3,0,0.59,0.111,0.18813559322,ok,3,3,3,9145.24,1555.28,0.170064426959,original saved artifacts,firstpass_native
+kidiq-kidscore_momhs,firstpass_original,3,0,0.042,0.011,0.261904761905,ok,3,3,3,3406.64,233.294,0.0684821407604,original saved artifacts,firstpass_native
+kidiq-kidscore_momhsiq,firstpass_original,3,0,0.163,0.019,0.116564417178,ok,3,3,3,6191.18,364.933,0.0589440139036,original saved artifacts,firstpass_native
+kidiq-kidscore_momiq,firstpass_original,3,0,0.076,0.015,0.197368421053,ok,3,3,3,3440.09,289.169,0.0840585566075,original saved artifacts,firstpass_native
+kidiq_with_mom_work-kidscore_interaction_c,firstpass_original,3,0,0.074,0.018,0.243243243243,ok,3,3,3,9168.95,1562.44,0.170405553526,original saved artifacts,firstpass_native
+kidiq_with_mom_work-kidscore_interaction_c2,firstpass_original,3,0,0.087,0.018,0.206896551724,ok,3,3,3,9006.41,1272.46,0.141283818969,original saved artifacts,firstpass_native
+kidiq_with_mom_work-kidscore_interaction_z,followup_new,3,0,0.073,0.018,0.246575342466,ok,3,3,3,9118.09,1602.89,0.175792298606,primary saved follow-up paired artifacts,followup_primary_native
+kidiq_with_mom_work-kidscore_mom_work,firstpass_original,3,0,0.096,0.019,0.197916666667,ok,3,3,3,8873.81,1212.63,0.136652689206,original saved artifacts,firstpass_native
+kilpisjarvi_mod-kilpisjarvi,firstpass_original,3,0,0.23,0.042,0.182608695652,ok,3,3,3,715.365,29.8894,0.0417820273567,original saved artifacts,firstpass_native
+low_dim_gauss_mix-low_dim_gauss_mix,firstpass_original,3,0,0.834,0.176,0.21103117506,ok,3,3,3,86559,18983.5,0.219312838642,original saved artifacts,firstpass_native
+lsat_data-lsat_model,firstpass_original,3,0,2.765,1.338,0.48390596745,ok,3,3,3,93352.9,42605.5,0.456391820715,original saved artifacts,firstpass_native
+mesquite-logmesquite,firstpass_original,3,0,0.064,0.029,0.453125,ok,3,3,3,1878.72,521.701,0.277689597173,original saved artifacts,firstpass_native
+mesquite-logmesquite_logva,firstpass_original,3,0,0.039,0.014,0.358974358974,ok,3,3,3,1105.69,165.217,0.149424341362,original saved artifacts,firstpass_native
+mesquite-logmesquite_logvas,firstpass_original,3,0,0.086,0.035,0.406976744186,ok,3,3,3,1862.27,530.01,0.284604273279,original saved artifacts,firstpass_native
+mesquite-logmesquite_logvash,firstpass_original,3,0,0.075,0.03,0.4,ok,3,3,3,1635.02,459.08,0.280779440007,original saved artifacts,firstpass_native
+mesquite-logmesquite_logvolume,firstpass_original,3,0,0.014,0.01,0.714285714286,ok,3,3,3,591.103,36.4772,0.0617103956502,original saved artifacts,firstpass_native
+mesquite-mesquite,followup_new,3,0,0.122,0.023,0.190082644628,ok,3,3,3,1899.95,204.269,0.107512829285,primary saved follow-up paired artifacts,followup_primary_native
+nes1972-nes,firstpass_original,3,0,3.171,0.222,0.0700094607379,ok,3,3,3,76256.9,3549.32,0.0465442471435,original saved artifacts,firstpass_native
+nes1976-nes,firstpass_original,3,0,3.156,0.192,0.0608365019011,ok,3,3,3,66526.9,4343.3,0.0652863728807,original saved artifacts,firstpass_native
+nes1980-nes,firstpass_original,3,0,1.754,0.088,0.0501710376283,ok,3,3,3,38790.7,1788.31,0.0461015140227,original saved artifacts,firstpass_native
+nes1984-nes,firstpass_original,3,0,3.303,0.175,0.0529821374508,ok,3,3,3,69897.5,3740.54,0.0535146464466,original saved artifacts,firstpass_native
+nes1988-nes,firstpass_original,3,0,2.932,0.196,0.0668485675307,ok,3,3,3,62888.5,5006.76,0.0796132838277,original saved artifacts,firstpass_native
+nes1992-nes,firstpass_original,3,0,3.66,0.153,0.0418032786885,ok,3,3,3,76191.2,3128.47,0.0410607786726,original saved artifacts,firstpass_native
+nes1996-nes,firstpass_original,3,0,2.958,0.165,0.0557809330629,ok,3,3,3,58660.1,3169.39,0.0540297408289,original saved artifacts,firstpass_native
+nes2000-nes,firstpass_original,3,0,1.221,0.058,0.047502047502,ok,3,3,3,26728.5,954.666,0.0357171558449,original saved artifacts,firstpass_native
+nes_logit_data-nes_logit_model,followup_replacement,3,0,0.081,0.113,1.3950617284,ok,3,3,3,6654.24,9048.71,1.35984124408,primary saved follow-up paired artifacts,followup_primary_native
+radon_all-radon_county_intercept,firstpass_original,3,0,18.301,1.206,0.0658980383586,ok,3,3,3,430895,36433.2,0.0845523851518,original saved artifacts,firstpass_native
+radon_all-radon_hierarchical_intercept_centered,firstpass_original,3,0,26.13,1.37,0.0524301569078,ok,3,3,3,581651,36811.3,0.0632876071734,original saved artifacts,firstpass_native
+radon_all-radon_hierarchical_intercept_noncentered,firstpass_original,3,0,28.418,1.354,0.0476458582589,ok,3,3,3,585982,37348.6,0.0637367700714,original saved artifacts,firstpass_native
+radon_all-radon_partially_pooled_centered,firstpass_original,3,0,13.234,1.199,0.0905999697748,ok,3,3,3,299883,35853.5,0.119558294401,original saved artifacts,firstpass_native
+radon_all-radon_partially_pooled_noncentered,firstpass_original,3,0,13.003,1.175,0.0903637622087,ok,3,3,3,302837,35987.1,0.11883323372,original saved artifacts,firstpass_native
+radon_all-radon_pooled,firstpass_original,3,0,3.52,0.071,0.0201704545455,ok,3,3,3,361835,8825.45,0.0243908134923,original saved artifacts,firstpass_native
+radon_all-radon_variable_intercept_centered,firstpass_original,3,0,18.218,1.129,0.061971676364,ok,3,3,3,430113,36085.9,0.0838986498897,original saved artifacts,firstpass_native
+radon_all-radon_variable_intercept_slope_centered,firstpass_original,3,0,17.487,1.161,0.0663921770458,ok,3,3,3,479684,40499,0.0844284987617,original saved artifacts,firstpass_native
+radon_all-radon_variable_intercept_slope_noncentered,firstpass_original,3,0,19.783,1.429,0.072233736036,ok,3,3,3,484586,41037.3,0.0846852777422,original saved artifacts,firstpass_native
+radon_all-radon_variable_slope_centered,firstpass_original,3,0,17.951,1.171,0.0652331346443,ok,3,3,3,468003,39633.8,0.0846870639718,original saved artifacts,firstpass_native
+radon_all-radon_variable_slope_noncentered,firstpass_original,3,0,18.037,1.354,0.0750679159505,ok,3,3,3,484843,42085.5,0.0868023257013,original saved artifacts,firstpass_native
+radon_mn-radon_county_intercept,firstpass_original,3,0,0.609,0.048,0.0788177339901,ok,3,3,3,34773.2,2659.07,0.0764689473503,original saved artifacts,firstpass_native
+radon_mn-radon_hierarchical_intercept_noncentered,firstpass_original,3,0,1.046,0.058,0.0554493307839,ok,3,3,3,46791,2811.59,0.0600882648373,original saved artifacts,firstpass_native
+radon_mn-radon_partially_pooled_centered,firstpass_original,3,0,0.451,0.051,0.113082039911,ok,3,3,3,23731.2,2676.55,0.112786121224,original saved artifacts,firstpass_native
+radon_mn-radon_partially_pooled_noncentered,firstpass_original,3,0,0.515,0.059,0.114563106796,ok,3,3,3,25644.2,2974.62,0.115995819718,original saved artifacts,firstpass_native
+radon_mn-radon_pooled,firstpass_original,3,0,0.233,0.017,0.0729613733906,ok,3,3,3,28517.8,791.625,0.0277589786028,original saved artifacts,firstpass_native
+radon_mn-radon_variable_intercept_centered,firstpass_original,3,0,0.669,0.054,0.0807174887892,ok,3,3,3,33996.6,2901.36,0.0853426519123,original saved artifacts,firstpass_native
+radon_mn-radon_variable_intercept_slope_noncentered,firstpass_original,3,0,1.394,0.113,0.0810616929699,ok,3,3,3,39111.2,3101.65,0.0793033709014,original saved artifacts,firstpass_native
+radon_mn-radon_variable_slope_noncentered,firstpass_original,3,0,0.602,0.055,0.0913621262458,ok,3,3,3,36318.7,3096.5,0.0852591089439,original saved artifacts,firstpass_native
+radon_mod-radon_county,firstpass_original,3,0,2.285,0.938,0.410503282276,ok,3,3,3,82689.2,40610.4,0.491120968639,original saved artifacts,firstpass_native
+rats_data-rats_model,followup_replacement,3,0,0.141,0.022,0.146341463415,ok,3,3,3,5106.97,294.149,0.0575975578474,primary saved follow-up paired artifacts,followup_primary_native
+sblrc-blr,firstpass_original,3,0,0.028,0.015,0.535714285714,ok,3,3,3,1183.9,413.614,0.349365655883,original saved artifacts,firstpass_native
+sblri-blr,firstpass_original,3,0,0.027,0.013,0.481481481481,ok,3,3,3,1114.03,328.536,0.294907677531,original saved artifacts,firstpass_native
+science_irt-grsm_latent_reg_irt,firstpass_original,3,0,52.251,7.308,0.139863351898,ok,3,3,3,1414560,221392,0.156509444633,original saved artifacts,firstpass_native
+seeds_data-seeds_centered_model,firstpass_original,3,0,0.054,0.021,0.388888888889,ok,3,3,3,1908.11,246.746,0.129314347705,original saved artifacts,firstpass_native
+seeds_data-seeds_model,firstpass_original,3,0,0.055,0.021,0.381818181818,ok,3,3,3,1575.74,206.861,0.131278637339,original saved artifacts,firstpass_native
+seeds_data-seeds_stanified_model,firstpass_original,3,0,0.056,0.025,0.446428571429,ok,3,3,3,1564.37,216.147,0.138168719676,original saved artifacts,firstpass_native
+sesame_data-sesame_one_pred_a,firstpass_original,3,0,0.034,0.014,0.411764705882,ok,3,3,3,2449.14,159.786,0.0652416766702,original saved artifacts,firstpass_native
+three_men1-ldaK2,firstpass_original,3,0,19.287,1.106,0.0573443251931,ok,3,3,3,470387,23316.6,0.0495689719316,original saved artifacts,firstpass_native
+timssAusTwn_irt-gpcm_latent_reg_irt,firstpass_plus_labelled_TIMSS_followup,3,0,76.51,4.918,0.0642791791923,ok,3,3,3,2381180,138874,0.0583215044642,TIMSS followup for repeat2; originals retained,firstpass_native
+traffic_accident_nyc-bym2_offset_only,followup_new,3,0,13,3.453,0.265615384615,ok,3,3,3,100685,20129.7,0.199927496648,primary saved follow-up paired artifacts,followup_primary_native
+wells_data-wells_daae_c_model,firstpass_original,3,0,0.287,0.505,1.75958188153,ok,3,3,3,22743.1,37928.8,1.66770580967,original saved artifacts,firstpass_native
+wells_data-wells_dae_c_model,firstpass_original,3,0,0.241,0.436,1.80912863071,ok,3,3,3,22209.4,44740,2.01446234477,original saved artifacts,firstpass_native
+wells_data-wells_dae_inter_model,followup_replacement,3,0,0.179,0.341,1.84916201117,ok,3,3,3,22328.9,48344.9,2.16512680875,primary saved follow-up paired artifacts,followup_primary_native
+wells_data-wells_dae_model,followup_replacement,3,0,0.297,0.493,1.64333333333,ok,3,3,3,19513.7,31369.3,1.6075526425,primary saved follow-up paired artifacts,followup_primary_native
+wells_data-wells_dist,firstpass_original,3,0,0.289,0.143,0.494809688581,ok,3,3,3,42447.8,23126.4,0.544819755087,original saved artifacts,firstpass_native
+wells_data-wells_dist100_model,firstpass_original,3,0,0.13,0.15,1.15384615385,ok,3,3,3,17837.1,24392.7,1.36752611131,original saved artifacts,firstpass_native
+wells_data-wells_dist100ars_model,firstpass_original,3,0,0.23,0.377,1.63913043478,ok,3,3,3,20830.6,34081.5,1.63612665982,original saved artifacts,firstpass_native
+wells_data-wells_interaction_c_model,followup_replacement,3,0,0.134,0.227,1.69402985075,ok,3,3,3,20776.4,38209.6,1.83908665601,primary saved follow-up paired artifacts,followup_primary_native
+wells_data-wells_interaction_model,firstpass_original,3,0,0.393,0.668,1.69974554707,ok,3,3,3,22078.5,32736.7,1.48274112825,original saved artifacts,firstpass_native

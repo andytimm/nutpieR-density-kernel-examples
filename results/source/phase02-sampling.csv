@@ -1,0 +1,11 @@
+model_id,sample_elapsed_s_bridgestan,sample_elapsed_s_kernel,sample_kernel_over_bridgestan
+bball_drive_event_0-hmm_drive_0,1.366,0.196,0.143484626647
+dogs-dogs_nonhierarchical,0.96,0.239,0.248958333333
+loss_curves-losscurve_sislob,0.043,0.027,0.627906976744
+Mh_data-Mh_model,0.863,0.306,0.354577056779
+radon_all-radon_variable_intercept_noncentered,12.932,0.975,0.0753943705537
+radon_mn-radon_variable_intercept_noncentered,0.493,0.047,0.0953346855984
+rstan_downloads-prophet,101.901,90.227,0.88543782691
+sat-hier_2pl,16.176,11.235,0.694547477745
+state_wide_presidential_votes-hierarchical_gp,6.381,41.556,6.51245886225
+three_men2-ldaK2,14.601,0.765,0.0523936716663

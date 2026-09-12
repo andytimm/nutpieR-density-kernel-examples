@@ -1,0 +1,2 @@
+models/**/model.stan whitespace=-trailing-space
+models/**/metadata/*.json whitespace=-trailing-space

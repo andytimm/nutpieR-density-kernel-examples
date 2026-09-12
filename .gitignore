@@ -1,0 +1,12 @@
+target/
+**/target/
+models/*/data.json
+models/*/data.rds
+__pycache__/
+*.py[cod]
+.Rhistory
+.Rproj.user/
+.DS_Store
+*.so
+*.dylib
+*.dll
