@@ -10,8 +10,8 @@ if len(rows) != 112 or len({row["model_id"] for row in rows}) != 112:
     raise SystemExit("performance.csv must contain 112 unique models")
 
 measurements = [
-    ("sampling", "sample_kernel_over_bridgestan"),
-    ("native evaluator", "native_kernel_over_bridgestan"),
+    ("sampling", "sample_evaluator_over_bridgestan"),
+    ("density evaluation", "native_evaluator_over_bridgestan"),
 ]
 for label, ratio_column in measurements:
     ratios = [float(row[ratio_column]) for row in rows]
@@ -19,5 +19,5 @@ for label, ratio_column in measurements:
     print(
         f"{label}: mean speedup={statistics.fmean(speedups):.3f}x; "
         f"median speedup={statistics.median(speedups):.3f}x; "
-        f"kernel faster={sum(ratio < 1 for ratio in ratios)}/{len(ratios)}"
+        f"density evaluator faster={sum(ratio < 1 for ratio in ratios)}/{len(ratios)}"
     )

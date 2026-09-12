@@ -1,40 +1,38 @@
 # Results
 
-`performance.csv` is a saved-only harmonization of two completed measurement
-sets:
+`performance.csv` combines two saved measurement sets; no models were rerun:
 
 - 102 rows from the frozen published-114 result;
 - 10 later phase02 rows for the remaining non-ODE models.
 
-No model was rerun to create this table. The original 102-model result remains
-unchanged in the evaluation archive.
+The original 102-model result remains unchanged in the evaluation archive.
 
 ## Ratios
 
 For each model, the sampling ratio is:
 
 ```text
-median kernel sample elapsed / median BridgeStan sample elapsed
+median density evaluator sample elapsed / median BridgeStan sample elapsed
 ```
 
 Each method has three matched repeats with fixed seeds. Runs used four chains,
 400 warmup draws, and 1,000 retained draws per chain. Compile, attach, and the
-pre-run kernel check are outside the sample timer. This differs from the
+pre-run density evaluator check are outside the sample timer. This differs from the
 1,000-warmup protocol in the Fisher HMC paper.
 
-The native evaluator ratio is:
+The density evaluator ratio is:
 
 ```text
-median kernel nanoseconds/evaluation / median BridgeStan nanoseconds/evaluation
+median density evaluator nanoseconds/evaluation / median BridgeStan nanoseconds/evaluation
 ```
 
 Each method has three alternating blocks over saved checker points. This timer
 covers log density plus the full gradient. It excludes process startup, binding,
 and R conversion. Native and sampling ratios are not interchangeable.
 
-A ratio below one favors the kernel. The main README converts each model to the
-base nutpieR/BYOK speedup direction, then reports the arithmetic mean and
-median of those 112 speedups. A few large wins pull the mean above the median.
+A ratio below one favors the custom evaluator. The main README converts each
+model to the BridgeStan/custom-evaluator speedup direction, then reports the
+arithmetic mean and median of those 112 speedups. A few large wins pull the mean above the median.
 
 ## Provenance
 
@@ -51,7 +49,7 @@ phase02 ratios reproduce directly from their displayed method medians.
 The corrected phase02 native run changed only stale manifest paths to already
 staged data and points. Its ten earlier `no points` errors remain preserved in
 the private evaluation archive. All corrected calls completed, and all 40
-post-run reference-library, kernel-library, data, and point hashes were
+post-run reference library, density evaluator library, data, and point hashes were
 unchanged.
 
 ## Limits
