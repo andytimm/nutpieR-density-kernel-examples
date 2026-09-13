@@ -1,8 +1,8 @@
 # nutpieR Bring Your Own Density Kernel examples
 
-Seyboldt, Carlson, and Carpenter's paper, ["Preconditioning Hamiltonian Monte Carlo by minimizing Fisher Divergence"](https://arxiv.org/abs/2603.18845), retained 114 models from [PosteriorDB](https://github.com/stan-dev/posteriordb). This repository tests Bring Your Own Density Kernel in nutpieR with 112 handwritten Rust custom density kernels. Each kernel returns the unconstrained log density and full gradient rather than using BridgeStan; both paths use the same nuts-rs NUTS sampler and settings.
+This repository tests support for bringing your own density kernel in nutpieR with 112 handwritten Rust custom density kernels. The 112 are chosen from Seyboldt, Carlson, and Carpenter's paper, ["Preconditioning Hamiltonian Monte Carlo by minimizing Fisher Divergence"](https://arxiv.org/abs/2603.18845) set of 114 models from [PosteriorDB](https://github.com/stan-dev/posteriordb), minus two ODE models that would be difficult to write correct kernels for. 
 
-Lotka-Volterra and SIR are omitted because exact matching of their ODE solvers and sensitivities was outside this experiment.
+Each kernel returns the unconstrained log density and full gradient rather than using BridgeStan; both paths use the same nuts-rs NUTS sampler and settings.
 
 | Measurement | Mean speedup (BridgeStan / custom kernel) | Median speedup (BridgeStan / custom kernel) | Custom kernel faster |
 | --- | ---: | ---: | ---: |
