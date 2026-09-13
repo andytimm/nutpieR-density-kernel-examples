@@ -36,6 +36,8 @@ arithmetic mean and median of those 112 speedups. A few large wins pull the mean
 
 ## Provenance
 
+`INPUTS.sha256` fingerprints the three private archive inputs used to prepare the sanitized tables; those inputs are not redistributed.
+
 The sanitized source tables used for the harmonization are in `source/`:
 
 - `frozen-102.csv`

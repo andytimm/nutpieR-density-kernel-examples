@@ -23,7 +23,7 @@ PosteriorDB's data metadata does not specify licenses, so the scripts fetch data
 
 ## Try one
 
-To try the `mesquite-mesquite` example, make [`nutpieR`](https://github.com/andytimm/nutpieR) available in R and run:
+To try the `mesquite-mesquite` example, make [`nutpieR`](https://github.com/andytimm/nutpieR) 1.9.0 or later available in R. You'll also need Python 3, Rust, and a working C/C++ toolchain. Then run:
 
 ```sh
 python3 scripts/fetch-data.py models/mesquite-mesquite
