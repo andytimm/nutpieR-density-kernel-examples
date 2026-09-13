@@ -5,7 +5,7 @@
 - 102 rows from the frozen published-114 result;
 - 10 later phase02 rows for the remaining non-ODE models.
 
-The original 102-model result remains unchanged in the evaluation archive.
+The original 102-model result remains unchanged in the evaluation archive. [`posterior-db-density-kernel-performance.csv`](posterior-db-density-kernel-performance.csv) is a smaller public-facing table with each model's median sampling times and the two speedup ratios.
 
 ## Ratios
 
