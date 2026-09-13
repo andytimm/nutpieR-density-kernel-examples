@@ -5,7 +5,7 @@ if (!length(args)) {
 model_arg <- args[!startsWith(args, "--")][1]
 run_reference <- "--reference" %in% args
 model_dir <- normalizePath(model_arg, mustWork = TRUE)
-manifest <- file.path(model_dir, "evaluator", "Cargo.toml")
+manifest <- file.path(model_dir, "kernel", "Cargo.toml")
 
 cargo_lines <- readLines(manifest, warn = FALSE)
 package_start <- match("[package]", trimws(cargo_lines), nomatch = 0L)
@@ -35,7 +35,7 @@ if (.Platform$OS.type == "windows") {
   library_name <- paste0("lib", gsub("-", "_", crate), ".so")
 }
 library_path <- normalizePath(
-  file.path(model_dir, "evaluator", "target", "release", library_name),
+  file.path(model_dir, "kernel", "target", "release", library_name),
   mustWork = TRUE
 )
 
@@ -48,15 +48,15 @@ reference <- nutpie_compile_model(file.path(model_dir, "model.stan"))
 data <- jsonlite::fromJSON(data_path, simplifyVector = TRUE)
 layout <- nutpie_density_layout(reference, data)
 cat(sprintf("Layout: %d unconstrained coordinates\n", layout$ndim))
-bound <- nutpie_attach_density_evaluator(reference, library_path, data = data)
-random <- nutpie_validate_density_evaluator(bound)
+bound <- nutpie_attach_density_kernel(reference, library_path, data = data)
+random <- nutpie_validate_density_kernel(bound)
 print(random)
-if (!identical(random$status, "pass")) stop("default density evaluator check failed", call. = FALSE)
+if (!identical(random$status, "pass")) stop("default density kernel check failed", call. = FALSE)
 
 if (run_reference) {
-  reference_check <- nutpie_validate_density_evaluator(bound, method = "reference")
+  reference_check <- nutpie_validate_density_kernel(bound, method = "reference")
   print(reference_check)
   if (!identical(reference_check$status, "pass")) {
-    stop("reference density evaluator check failed", call. = FALSE)
+    stop("reference density kernel check failed", call. = FALSE)
   }
 }

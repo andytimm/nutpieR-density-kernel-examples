@@ -14,20 +14,20 @@ def number(value):
 
 rows = []
 for row in read("frozen-102.csv"):
-    sample_ratio = number(row["sample_evaluator_over_bridgestan"])
-    native_ratio = number(row["native_evaluator_over_bridgestan"])
+    sample_ratio = number(row["sample_kernel_over_bridgestan"])
+    native_ratio = number(row["native_kernel_over_bridgestan"])
     rows.append({
         "model_id": row["model_id"],
         "measurement_source": row["measurement_source"],
         "sample_bridgestan_median_s": row["bridgestan_median_sample_s"],
-        "sample_evaluator_median_s": row["evaluator_median_sample_s"],
-        "sample_evaluator_over_bridgestan": row["sample_evaluator_over_bridgestan"],
-        "sample_bridgestan_over_evaluator": 1 / sample_ratio,
+        "sample_kernel_median_s": row["kernel_median_sample_s"],
+        "sample_kernel_over_bridgestan": row["sample_kernel_over_bridgestan"],
+        "sample_bridgestan_over_kernel": 1 / sample_ratio,
         "sample_valid_pairs": int(float(row["sample_valid_pairs"])),
         "native_bridgestan_median_ns_per_eval": row["bridgestan_median_ns_per_eval"],
-        "native_evaluator_median_ns_per_eval": row["evaluator_median_ns_per_eval"],
-        "native_evaluator_over_bridgestan": row["native_evaluator_over_bridgestan"],
-        "native_bridgestan_over_evaluator": 1 / native_ratio,
+        "native_kernel_median_ns_per_eval": row["kernel_median_ns_per_eval"],
+        "native_kernel_over_bridgestan": row["native_kernel_over_bridgestan"],
+        "native_bridgestan_over_kernel": 1 / native_ratio,
         "native_blocks_per_method": int(float(row["native_blocks"])),
     })
 
@@ -38,20 +38,20 @@ if sampling.keys() != native.keys() or len(sampling) != 10:
 for model_id in sampling:
     sample = sampling[model_id]
     native_row = native[model_id]
-    sample_ratio = number(sample["sample_evaluator_over_bridgestan"])
-    native_ratio = number(native_row["native_evaluator_over_bridgestan"])
+    sample_ratio = number(sample["sample_kernel_over_bridgestan"])
+    native_ratio = number(native_row["native_kernel_over_bridgestan"])
     rows.append({
         "model_id": model_id,
         "measurement_source": "phase02",
         "sample_bridgestan_median_s": sample["sample_elapsed_s_bridgestan"],
-        "sample_evaluator_median_s": sample["sample_elapsed_s_evaluator"],
-        "sample_evaluator_over_bridgestan": sample["sample_evaluator_over_bridgestan"],
-        "sample_bridgestan_over_evaluator": 1 / sample_ratio,
+        "sample_kernel_median_s": sample["sample_elapsed_s_kernel"],
+        "sample_kernel_over_bridgestan": sample["sample_kernel_over_bridgestan"],
+        "sample_bridgestan_over_kernel": 1 / sample_ratio,
         "sample_valid_pairs": 3,
         "native_bridgestan_median_ns_per_eval": native_row["bridgestan"],
-        "native_evaluator_median_ns_per_eval": native_row["evaluator"],
-        "native_evaluator_over_bridgestan": native_row["native_evaluator_over_bridgestan"],
-        "native_bridgestan_over_evaluator": 1 / native_ratio,
+        "native_kernel_median_ns_per_eval": native_row["kernel"],
+        "native_kernel_over_bridgestan": native_row["native_kernel_over_bridgestan"],
+        "native_bridgestan_over_kernel": 1 / native_ratio,
         "native_blocks_per_method": 3,
     })
 

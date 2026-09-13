@@ -1,4 +1,4 @@
-model_id,bridgestan,evaluator,native_evaluator_over_bridgestan
+model_id,bridgestan,kernel,native_kernel_over_bridgestan
 Mh_data-Mh_model,30258.1,9818.97,0.324507156761
 bball_drive_event_0-hmm_drive_0,121165,12905.5,0.106511781455
 dogs-dogs_nonhierarchical,33327,8217.38,0.246568247967

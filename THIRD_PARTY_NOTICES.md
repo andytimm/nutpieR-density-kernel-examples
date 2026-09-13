@@ -15,5 +15,5 @@ the pinned upstream revision and checks their content hashes. Each model
 folder retains the upstream posterior, model, and data metadata, including its
 titles, references, URLs, and available license fields.
 
-The custom density evaluators written in Rust and the repository scripts are available under the root
+The custom density kernels written in Rust and the repository scripts are available under the root
 MIT license.
